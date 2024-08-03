@@ -1,0 +1,52 @@
+Learning: any process by which a system improves its performance from experience
+
+Artificial Intelligence: Encompasses all techniques and technologies that allow machines 
+to perform intelligent tasks. Includes: Machine Learning, Natural Language Processing, 
+Computer Vision, Robotics, Expert Systems, among others.
+
+Machine Learning: field of study that focuses on developing algorithms and models that allow 
+computers to learn from data and improve their performance on specific tasks with experience.
+
+Data Science: Art of discovering implicit, previously unknown, and potentially useful 
+knowledge from data. Machine Learning is a tool within data science. Combines statistics, 
+data analysis, machine learning and other techniques to extract knowledge and insights from data.
+
+Types of Machine Learning
+
+Supervised Learning: The system learns from a training data set that includes the desired inputs 
+and outputs (labels). The goal is to create a model that can predict the correct output for new 
+inputs. Examples: Classifying emails as spam or non-spam, recognizing handwritten digits.
+
+Unsupervised Learning: The system learns from input data without output labels. 
+The goal is to find patterns or structure in the data. Examples: Grouping customers based on 
+purchasing behavior, dimensionality reduction.
+
+Reinforcement Learning:The system learns through interactions with an environment. You receive 
+rewards or penalties based on the actions you take and adjust your behavior to maximize the total 
+reward. Examples: Video games, robotics.
+
+Traditional Programming: It involves writing programs explicitly to solve problems. Each step of 
+the process is detailed by the programmer. Explicit instructions written by the programmer. 
+Performance and accuracy depend on the quality of the instructions provided.
+
+Classical AI: Based on heuristics and symbolic logic, where knowledge is encoded in explicit rules
+and representations.
+
+Machine Learning: Learning algorithms that find patterns in data and adjust models based on 
+those patterns. The ouput is a learned model that can make predictions or decisions based on 
+new data. Performance and accuracy depend on the quantity and quality of the data and the 
+learning algorithm.
+
+When to use ML:
+
+1)In unknown or previously unexplored environments, such as the surface of Mars, there is no 
+direct human expertise that can be applied. ML algorithms can be trained to identify patterns
+and make data-driven decisions.
+
+2)When Humans Can't Explain Their Expertise. Example: Recognizing speech patterns and human 
+accents is something we do naturally, but it is difficult to explain all the details of how it
+is done.
+
+3)When Models Need to Be Customized. Example:ML can be used to create models that take into 
+account patient-specific data (medical history, genomics, etc.) to recommend personalized 
+treatments that maximize effectiveness and minimize side effects.
