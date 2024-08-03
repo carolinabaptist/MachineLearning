@@ -50,3 +50,17 @@ is done.
 3)When Models Need to Be Customized. Example:ML can be used to create models that take into 
 account patient-specific data (medical history, genomics, etc.) to recommend personalized 
 treatments that maximize effectiveness and minimize side effects.
+
+Machine Learning Terminology
+
+Dataset: collection of observations or instances. Each observation can be described by several characteristics or attributes (also called variables or features).
+
+Observations/Instances/Records: Each row in a dataset represents an observation, instance, or record.
+
+Variables/Attributes:They are characteristics or properties that describe the observations in the data set. They can be input (input) or output (output).
+
+Data Size: Refers to the total number of observations in the data set.
+
+Data Dimensionality: Refers to the number of variables or attributes in the dataset.
+
+Features: individual variables that are used as inputs to the model.
