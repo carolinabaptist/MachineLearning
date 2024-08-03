@@ -54,13 +54,57 @@ treatments that maximize effectiveness and minimize side effects.
 Machine Learning Terminology
 
 Dataset: collection of observations or instances. Each observation can be described by several characteristics or attributes (also called variables or features).
-
 Observations/Instances/Records: Each row in a dataset represents an observation, instance, or record.
-
 Variables/Attributes:They are characteristics or properties that describe the observations in the data set. They can be input (input) or output (output).
 
 Data Size: Refers to the total number of observations in the data set.
-
 Data Dimensionality: Refers to the number of variables or attributes in the dataset.
-
 Features: individual variables that are used as inputs to the model.
+
+Numeric Variables
+Discrete Variables: Variables that take on finite values. Do not have fractional values.
+Continuous Variables: can take on any value within a range. Include fractions and decimals.
+
+Categorical Variables
+Nominal Variables: Categorical variables that do not have an intrinsic order.
+Ordinal Variables: Categorical variables that have an intrinsic order. Example: clothing sizes (small, medium, large)
+
+Empirical Distribution: It is the representation of data collected from a specific set of observations.
+Theoretical Distribution: A theoretical distribution is a mathematical function that describes the expected behavior of a variable. 
+
+Mean: sum of all values ​​in a data set divided by the total number of values.
+Median: is the value that divides an ordered set of data into two equal halves. 
+If the number of observations is odd, the median is the middle value. If it is even, it is the average of the two central values.
+Mode: the value that appears most frequently in a data set.
+
+Standard Deviation: measures the amount of variation of a set of values. A low standard deviation indicates that values ​​tend to be close to the mean, while a high standard deviation indicates that values ​​are spread over a wider range.
+Percentiles: values ​​that divide a set of data into 100 equal parts. The 50th percentile is the median.
+25th Percentile (First Quartile): 25% of the data is less than or equal to this value.
+75th Percentile (Third Quartile): 75% of the data is less than or equal to this value.
+
+IQR - Interquartile Range: the difference between the third quartile (Q3) and the first quartile (Q1).The IQR is widely used to identify outliers outside [q1 -1.5 * IQR, q3 + 1.5*IQR].
+Correlation: measures the strength and direction of the linear relationship between two numeric variables.Pearson Correlation Coefficient and Spearman Coefficient are commonly used.
+
+Data Visualization
+
+Histogram: graphical representation of the distribution of a set of numerical data. It is used to visualize the frequency distribution of values ​​in continuous or discrete intervals.
+
+Horizontal Axis (X): Represents the ranges (or "bins") into which data is grouped. Each interval covers a range of values ​​from the dataset.
+Vertical Axis (Y): Represents the frequency (the number of occurrences) of data within each interval.
+
+Example: Annual salaries of a group of 1000 employees in a company. Divide the salary range into bins and see the number of employees in each range.
+
+Boxplot: graphical tool used to summarize the distribution of a set of quantitative (numeric) data. It shows the median, quartiles, and possible outliers in a visually intuitive way.
+  o   Outlier      
+__|__ Upper Limit
+|    |Upper Quartile (Q3): 75th percentile
+|____|Median (Q2): 50th percentile
+|____|Lower Quartile (Q1): 25th percentile.
+   |  Lower limit
+   o  Outlier
+
+The height of the box represents the interquartile range (IQR), which is Q3 - Q1.
+The whiskers extend from the quartiles to the boundaries defined as:
+Lower Limit: Q1 - 1.5 * IQR.
+Upper Limit: Q3 + 1.5 * IQR.
+Outliers: Data points that are outside the bounds of the whiskers. They are plotted individually.
