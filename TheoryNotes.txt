@@ -165,5 +165,41 @@ Minkowski Distances: family of metrics used to measure the distance between poin
 d(x,y) = (sum(|xi-yi|^p)) ^ 1/p
 *sum from i to n
 p is a parameter that defines the specific metric.
-Manhattan Distance (or L1 Norm): p = 1
-Euclidean Distance (or L2 Norm): p = 2
+Manhattan Distance (or L1 Norm): p = 1  d(x,y) = (sum(|xi-yi|))
+Euclidean Distance (or L2 Norm): p = 2  d(x,y) = (sum(|xi-yi|)^2)^1/2
+
+Norm: function that assigns a non-negative real number to a vector, representing its length or magnitude. Examples: 
+Manhattan Norm (||x||1 = sum(|xi|)) sum from 1 to n and Euclidean Norm. (||x||2 = (sum(xi^2)))^1/2 sum from 1 to n
+
+Cosine Similarity: measures the similarity between two vectors by calculating the cosine of the angle between them. The cosine similarity value ranges from -1 to 1.
+
+1: vectors are perfectly aligned (0 degree angle).
+0: vectors are orthogonal (90 degree angle).
+-1: vectors are diametrically opposite (180 degree angle)
+
+cos(θ) = x*y / ||x||*||y||
+x*y: scalar product of the vectors
+||x||: norm (L2) of the vector
+||y||: norm (L2) of the vector
+
+Categorical Variables:represent distinct categories or labels, not numerical quantities. Categorical variables need to be transformed into a form that can be understood by machine learning algorithms.
+
+Mixed data: datasets that contain both numeric and categorical variables.
+
+Coding Techniques for Categorical Variables:
+1) One-Hot Encoding: Transforms each category into a separate binary column, where 1 indicates the presence of the category and 0 indicates its absence.
+2) Label Encoding: Assigns a unique integer to each category.
+3) Ordinal Encoding: Similar to Label Encoding, but applied to categorical variables that have an intrinsic order.
+4) Binary Encoding: Converts categories to binary representations.
+
+Coding Techniques for Mixed Data:
+1) Normalization of Numerical Variables: adjusts the values ​​of numeric variables to a common range, usually [0, 1] or to a distribution with mean 0 and standard deviation 1.
+2) Apply one of the previously mentioned coding techniques to categorical variables.
+
+Instance-Based Learning (IBL): non-parametric machine learning approach where the model memorizes the training instances instead of creating a general model with a fixed set of parameters. To make a prediction, the model compares the new instance with the stored instances and makes a decision based on the closest or similar ones.
+
+Parametric Models: They assume a specific mathematical relationship for the independent variables (input) and the dependent variable (output). They have a fixed number of parameters that are adjusted during training. Training involves tuning model parameters to minimize a cost function.
+Examples: Linear Regression, Logistic Regression, Neural Networks.
+
+Non-parametric models: They do not make explicit assumptions about the functional form of the relationship between variables. They rely directly on data to make predictions and often do not have a fixed number of parameters. The number of parameters can grow with the amount of data. Training involves memorizing the training data. To make a prediction, the model compares the new observation with the training observations.
+Examples: k-Nearest Neighbors (kNN), Decision Trees, Support Vector Machines (com kernels).
