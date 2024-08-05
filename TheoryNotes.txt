@@ -108,3 +108,62 @@ The whiskers extend from the quartiles to the boundaries defined as:
 Lower Limit: Q1 - 1.5 * IQR.
 Upper Limit: Q3 + 1.5 * IQR.
 Outliers: Data points that are outside the bounds of the whiskers. They are plotted individually.
+
+Vector Space (or Feature Space): A feature is a measurable characteristic of a phenomenon. Features are usually numeric or categorical, but can also be structural such as images, videos, time series or graphs. A phenomenon is described by random variables.
+
+Random variable: function that associates each result of a random experiment with a numerical value. It quantitatively represents the possible results of an uncertain phenomenon.
+
+Types of random variable: Discrete and Continuous.
+
+Examples of Vector Space:
+
+1) Euclidean Vector Space R^2: It is a two-dimensional vector space where each point is represented by an ordered pair of real numbers (x, y). For example, the Cartesian plane. Each point on the plane is a vector. 𝑣 = (3,4) is a vector at 𝑅2.
+
+2) Euclidean Vector Space R^3: It is a three-dimensional vector space where each point is represented by an ordered trio of real numbers (x, y, z). The three-dimensional space we use to represent physical positions. A vector in this space can be 
+w=(1,2,3).
+
+Univariate Data Space: a set of observations of a single variable. Each observation can be represented by a numerical value. Suppose we are measuring the height of a group of people. Heights are represented as a list of values: [170,165,180,175,160].
+
+Descriptive Statistics: Mean, median, mode, variance, standard deviation.
+Visualization: Histograms, box plots.
+
+Multivariate Data Space: set of observations of multiple variables. Each observation is represented by a vector of numerical values, where each component of the vector corresponds to a variable. Example: Each person is represented by a vector (height, weight, age):(170,70,25)
+
+Multivariate Descriptive Statistics: Mean and variance for each variable, covariance between variables.
+
+Variance: quantifies how much the values ​​in a data set differ from the average of those values.
+
+Visualization: Scatter plots, scatter matrices, correlation graphs.
+
+Scatter plot: used to visualize the relationship between two numerical variables. Each point on the graph represents a pair of values. 
+If the points form an ascending line, it indicates a positive correlation. 
+If the points form a descending line, it indicates a negative correlation.
+If the points are randomly scattered, it indicates little or no correlation.
+It is useful to identify patterns, trends, correlations between two variables and possible outliers.
+
+Scatter Matrix: collection of scatter plots organized in a matrix. Each graph in the matrix shows the relationship between a different pair of variables. is useful for viewing relationships between multiple variables at the same time.
+
+Correlation graphs: matrix where each cell shows the correlation coefficient between a pair of variables. Correlation values ​​range from -1 to 1. Cells are often colored to help visualize strong and weak correlations.
+1: perfect positive correlation.
+-1: perfect negative correlation.
+0: no linear correlation.
+
+Multivariate methods: statistical techniques that analyze data involving multiple variables at the same time. Main Multivariate Methods:
+
+1) Principal component analysis (PCA): dimensionality reduction technique that transforms a set of correlated variables into a set of uncorrelated variables, called principal components.
+
+2) Clustering: unsupervised machine learning technique that involves grouping a set of objects in such a way that objects in the same group (or cluster) are more similar to each other than to those in other groups.
+
+3) Linear Discriminant Analysis (LDA): seeks to project data into a lower-dimensional space in order to maximize the separation between different classes. Similar to Principal Component Analysis (PCA), LDA reduces the number of dimensions in the data. However, unlike PCA, LDA takes the data category into account when performing the reduction.
+
+4) Multivariate regression: used to model the relationship between multiple independent variables (predictors) and one or more dependent variables (responses). 
+  Multiple regression: There is only one dependent variable. 
+  Multivariate regression: There is more than one dependent variable.
+
+Minkowski Distances: family of metrics used to measure the distance between points in a vector space. Consider x = (x1, x2, ..., xn) and y = (y1,y2,...,yn) in a n-dimensional space:
+
+d(x,y) = (sum(|xi-yi|^p)) ^ 1/p
+*sum from i to n
+p is a parameter that defines the specific metric.
+Manhattan Distance (or L1 Norm): p = 1
+Euclidean Distance (or L2 Norm): p = 2
